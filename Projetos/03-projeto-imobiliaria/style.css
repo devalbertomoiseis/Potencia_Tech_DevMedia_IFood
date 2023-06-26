@@ -153,6 +153,11 @@ nav ul li a.active {
   margin-bottom: 2rem;
 }
 
+.corretores img {
+  max-width: 700px;
+  max-height: 350px;
+}
+
 .corretores .texto-azul {
   color: #1c81c0;
 }
@@ -161,6 +166,13 @@ nav ul li a.active {
   text-align: center;
   max-width: 700px;
   padding: 0 2%;
+}
+
+@media (max-width: 700px) {
+  .corretores img {
+    max-width: 400px;
+    max-height: 350px;
+  }
 }
 
 .contato {
@@ -183,9 +195,25 @@ nav ul li a.active {
   list-style: none;
   background-color: #1c81c0;
   border-radius: 0.4rem;
+  width: 22%;
 }
 
 .contato ul li a {
   text-decoration: none;
   color: #fff;
+}
+
+@media (max-width: 700px) {
+  .contato iframe {
+    max-width: 400px;
+    max-height: 350px;
+  }
+  .contato p {
+    max-width: 400px;
+    text-align: center;
+  }
+  .contato ul li {
+    text-align: center;
+    width: 90%;
+  }
 }
